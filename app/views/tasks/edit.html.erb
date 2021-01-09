@@ -1,0 +1,9 @@
+<%= form_for @task do |f| %>
+<%= f.label :completed, "Completed",  {checked: @task.completed, checked_value: true, unchecked_value: false}%>
+<%= f.check_box :completed %>
+<%= f.label :title, "Title" %>
+<%= f.text_field :title%>
+<%= f.label :details, "Details" %>
+<%= f.text_field :details %>
+<%= f.submit "Edit it!"%>
+<% end %>
